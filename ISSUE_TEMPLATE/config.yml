@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: SignalWire Discord
+    url: https://signalwire.community
+    about: Real-time chat with developers and the SignalWire team
+  - name: SignalWire Documentation
+    url: https://developer.signalwire.com
+    about: Full API reference and guides
+  - name: Service Status
+    url: https://status.signalwire.com
+    about: Check SignalWire service health

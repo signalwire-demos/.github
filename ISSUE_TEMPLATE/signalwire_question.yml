@@ -1,0 +1,41 @@
+name: SignalWire Question
+description: Question about SignalWire (not a specific demo)
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## This repo is for demo-specific issues
+
+        For general SignalWire questions, you'll get faster help from the community:
+
+        ### Community
+        - **[Discord](https://signalwire.community)** - Real-time chat with developers and the SignalWire team
+
+        ### Documentation
+        - **[Getting Started](https://signalwire.com/getting-started)** - New to SignalWire? Start here
+        - **[API Docs](https://developer.signalwire.com)** - Full API reference
+        - **[GitHub](https://github.com/signalwire)** - Official SignalWire repos
+
+        ### Other Resources
+        - **[Developer Blog](https://signalwire.com/blogs/developers)** - Tutorials and guides
+        - **[Status Page](https://status.signalwire.com)** - Service health
+
+        ---
+
+        If your question is specifically about one of our demos, please continue below.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: If this is demo-specific, describe your question here
+    validations:
+      required: true
+
+  - type: input
+    id: demo
+    attributes:
+      label: Related demo (if any)
+      placeholder: e.g., santa, blackjack, cinebot

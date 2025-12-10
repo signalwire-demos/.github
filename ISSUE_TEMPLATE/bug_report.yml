@@ -1,0 +1,69 @@
+name: Bug Report
+description: Something isn't working correctly
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below.
+
+  - type: input
+    id: demo
+    attributes:
+      label: Which demo?
+      description: Name of the demo application
+      placeholder: e.g., santa, blackjack, cinebot
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Are you using the live demo or self-hosted?
+      options:
+        - Live demo (*.signalwire.io)
+        - Self-hosted
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug
+      placeholder: Tell us what went wrong
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: What should have happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. See error...
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser/Device
+      description: What browser and device are you using?
+      placeholder: e.g., Chrome 120 on macOS, Safari on iPhone 15
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Add any relevant logs, error messages, or screenshots
