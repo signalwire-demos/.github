@@ -1,0 +1,79 @@
+name: Deployment Issue
+description: Problems deploying a demo to production
+title: "[Deploy]: "
+labels: ["deployment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Having trouble deploying? Let's troubleshoot.
+
+  - type: input
+    id: demo
+    attributes:
+      label: Which demo?
+      placeholder: e.g., santa, blackjack, cinebot
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Deployment platform
+      options:
+        - Docker / Docker Compose
+        - Heroku
+        - Railway
+        - Render
+        - AWS (EC2, ECS, Lambda)
+        - Google Cloud
+        - Azure
+        - DigitalOcean
+        - VPS / Self-hosted
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where does it fail?
+      options:
+        - Build step
+        - Container startup
+        - App starts but crashes
+        - App runs but SignalWire connection fails
+        - Webhooks not reaching app
+        - SSL / HTTPS issues
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Error or logs
+      description: Paste relevant logs or error messages
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: config
+    attributes:
+      label: Configuration changes
+      description: What did you modify from the default setup?
+      placeholder: |
+        - Changed PORT to 8080
+        - Using external Redis
+        - etc.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Deployment checklist
+      options:
+        - label: Environment variables are set in deployment platform
+        - label: SignalWire webhooks point to my deployed URL
+        - label: App is accessible via HTTPS
+        - label: Firewall allows inbound traffic on app port

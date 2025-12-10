@@ -1,0 +1,53 @@
+name: Feature Request
+description: Suggest an improvement or new feature for a demo
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to make a demo better? We'd love to hear it!
+
+  - type: input
+    id: demo
+    attributes:
+      label: Which demo?
+      placeholder: e.g., santa, blackjack, cinebot, or "new demo idea"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the use case or limitation
+      placeholder: Currently the demo doesn't...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How would you like it to work?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope of change
+      options:
+        - Small tweak (UI, text, config)
+        - New feature for existing demo
+        - New SignalWire capability showcase
+        - Entirely new demo idea
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Would you like to contribute?
+      options:
+        - label: I'd be willing to submit a PR for this

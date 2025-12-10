@@ -1,0 +1,81 @@
+name: Setup Issue
+description: Having trouble getting a demo running locally
+title: "[Setup]: "
+labels: ["setup", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Having trouble setting up a demo? Let's figure it out!
+
+  - type: input
+    id: demo
+    attributes:
+      label: Which demo?
+      placeholder: e.g., santa, blackjack, cinebot
+    validations:
+      required: true
+
+  - type: dropdown
+    id: step
+    attributes:
+      label: Where are you stuck?
+      options:
+        - Cloning / downloading the repo
+        - Installing dependencies
+        - Setting up environment variables
+        - Running the app locally
+        - Connecting to SignalWire
+        - Other (describe below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message
+      description: Paste the full error message or screenshot
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps you followed
+      description: What commands did you run?
+      placeholder: |
+        1. git clone ...
+        2. pip install -r requirements.txt
+        3. python app.py
+        4. Got error...
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - Docker
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime version
+      description: Python/Node.js version
+      placeholder: e.g., Python 3.11, Node 20
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Setup checklist
+      options:
+        - label: I have a SignalWire account
+        - label: I copied .env.example to .env
+        - label: I filled in my SignalWire credentials
+        - label: I installed all dependencies
