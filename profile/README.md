@@ -9,7 +9,7 @@ Example applications showcasing [SignalWire](https://signalwire.com) voice, vide
 | [Santa](https://github.com/signalwire-demos/santa) | AI-powered Santa Claus voice assistant | [Live Demo](https://santa.signalwire.io) |
 | [Blackjack](https://github.com/signalwire-demos/blackjack) | Voice-controlled blackjack game | [Live Demo](https://blackjack.signalwire.io) |
 | [Cinebot](https://github.com/signalwire-demos/cinebot) | Movie recommendation AI assistant | [Live Demo](https://cinebot.signalwire.io) |
-| [Example Agent](https://github.com/signalwire-demos/example-agent) | Starter template for SignalWire AI agents | [Live Demo](https://example-agent.signalwire.io) |
+| [Example Agent](https://github.com/signalwire-demos/example) | Starter template for SignalWire AI agents | [Live Demo](https://example.signalwire.io) |
 | [Bobby's Table](https://github.com/signalwire-demos/bobbystable) | Restaurant reservation voice assistant | [Live Demo](https://bobbystable.signalwire.io) |
 | [Holy Guacamole](https://github.com/signalwire-demos/holyguacamole) | Food ordering AI assistant | [Live Demo](https://holyguacamole.signalwire.io) |
 
