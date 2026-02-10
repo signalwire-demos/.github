@@ -12,6 +12,7 @@ Example applications showcasing [SignalWire](https://signalwire.com) voice, vide
 | [Example Agent](https://github.com/signalwire-demos/example) | Starter template for SignalWire AI agents | [Live Demo](https://example.signalwire.io) |
 | [Bobby's Table](https://github.com/signalwire-demos/bobbystable) | Restaurant reservation voice assistant | [Live Demo](https://bobbystable.signalwire.io) |
 | [Holy Guacamole](https://github.com/signalwire-demos/holyguacamole) | Food ordering AI assistant | [Live Demo](https://holyguacamole.signalwire.io) |
+| [Cabby](https://github.com/signalwire-demos/cabby) | AI taxi dispatcher with booking, SMS confirmations & dashboard | [Live Demo](https://cabby.signalwire.io) |
 
 ## Getting Started
 
